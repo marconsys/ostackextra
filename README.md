@@ -14,6 +14,6 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 This repository contains a script made to extract infromation about instances (servers) from an OpenStack cluster.<br/>
 It is a custom script, made for a custom OpenStack architecture, where Nova ephemeral disks of instances are mounted from a nfs share,
 which is the same nfs share mounted on all the compute nodes of the cluster.<br/>
-In order to extract data, the script calls ssh in order to connect to one of the compute nodes, and calls openstack cli from the host where it is run.<br/>
+In order to extract data, the script calls ssh to execute shell commands on one of the compute nodes, and also calls openstack cli from the host where it is run.<br/>
 The output of the script is a csv file, so it can also be imported into a spreadsheet for further elaboration.<br/>
 There is an example csv extraction file in the repository.<br/>
